@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import ReduxProvider from "@/lib/redux/Provider";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
   title: "Trackly",
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className={inter.variable}>
       <body className={inter.className}>
         <ReduxProvider>{children}</ReduxProvider>
       </body>
