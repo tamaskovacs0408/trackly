@@ -1,6 +1,6 @@
 "use client";
 
-import { useDispatch, UseDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { play } from "@/lib/redux/slices/playerSlice";
 import Image from "next/image";
 import Link from "next/link";
